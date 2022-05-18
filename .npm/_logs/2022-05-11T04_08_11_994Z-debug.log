@@ -1,0 +1,41 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/root/.nvm/versions/node/v12.15.0/bin/node',
+1 verbose cli   '/root/.nvm/versions/node/v12.15.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'esri-loader@6.4.1'
+1 verbose cli ]
+2 info using npm@6.13.4
+3 info using node@v12.15.0
+4 verbose npm-session a05b764c540c28a6
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/esri-loader 77ms
+8 silly fetchPackageMetaData error for esri-loader@6.4.1 No matching version found for esri-loader@6.4.1.
+9 timing stage:rollbackFailedOptional Completed in 1ms
+10 timing stage:runTopLevelLifecycles Completed in 448ms
+11 verbose type version
+12 verbose stack esri-loader: No matching version found for esri-loader@6.4.1.
+12 verbose stack     at pickManifest (/root/.nvm/versions/node/v12.15.0/lib/node_modules/npm/node_modules/npm-pick-manifest/index.js:122:13)
+12 verbose stack     at /root/.nvm/versions/node/v12.15.0/lib/node_modules/npm/node_modules/pacote/lib/fetchers/registry/manifest.js:24:14
+12 verbose stack     at tryCatcher (/root/.nvm/versions/node/v12.15.0/lib/node_modules/npm/node_modules/bluebird/js/release/util.js:16:23)
+12 verbose stack     at Promise._settlePromiseFromHandler (/root/.nvm/versions/node/v12.15.0/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:517:31)
+12 verbose stack     at Promise._settlePromise (/root/.nvm/versions/node/v12.15.0/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:574:18)
+12 verbose stack     at Promise._settlePromise0 (/root/.nvm/versions/node/v12.15.0/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:619:10)
+12 verbose stack     at Promise._settlePromises (/root/.nvm/versions/node/v12.15.0/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:699:18)
+12 verbose stack     at _drainQueueStep (/root/.nvm/versions/node/v12.15.0/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:138:12)
+12 verbose stack     at _drainQueue (/root/.nvm/versions/node/v12.15.0/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:131:9)
+12 verbose stack     at Async._drainQueues (/root/.nvm/versions/node/v12.15.0/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:147:5)
+12 verbose stack     at Immediate.Async.drainQueues [as _onImmediate] (/root/.nvm/versions/node/v12.15.0/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:17:14)
+12 verbose stack     at processImmediate (internal/timers.js:439:21)
+13 verbose cwd /root/fabric-samples/fabcar
+14 verbose Linux 3.10.0-1160.59.1.el7.x86_64
+15 verbose argv "/root/.nvm/versions/node/v12.15.0/bin/node" "/root/.nvm/versions/node/v12.15.0/bin/npm" "install" "--save" "esri-loader@6.4.1"
+16 verbose node v12.15.0
+17 verbose npm  v6.13.4
+18 error code ETARGET
+19 error notarget No matching version found for esri-loader@6.4.1.
+20 error notarget In most cases you or one of your dependencies are requesting
+20 error notarget a package version that doesn't exist.
+21 verbose exit [ 1, true ]

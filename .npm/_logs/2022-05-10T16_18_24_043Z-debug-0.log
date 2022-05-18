@@ -1,0 +1,354 @@
+0 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i', 'fabric-client' ]
+1 info using npm@8.5.0
+2 info using node@v16.14.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/root/fabric-samples/fabcar/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 12ms
+11 timing config:load:file:/root/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/usr/etc/npmrc Completed in 2ms
+14 timing config:load:global Completed in 2ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 24ms
+19 timing npm:load:configload Completed in 24ms
+20 timing npm:load:setTitle Completed in 0ms
+21 timing config:load:flatten Completed in 4ms
+22 timing npm:load:display Completed in 5ms
+23 verbose logfile /root/.npm/_logs/2022-05-10T16_18_24_043Z-debug-0.log
+24 timing npm:load:logFile Completed in 5ms
+25 timing npm:load:timers Completed in 0ms
+26 timing npm:load:configScope Completed in 0ms
+27 timing npm:load Completed in 36ms
+28 timing arborist:ctor Completed in 1ms
+29 silly logfile start cleaning logs, removing 1 files
+30 timing idealTree:init Completed in 176ms
+31 timing idealTree:userRequests Completed in 2ms
+32 silly idealTree buildDeps
+33 silly fetch manifest fabric-client@^1.4.19
+34 timing arborist:ctor Completed in 0ms
+35 http fetch GET 200 https://registry.npmjs.org/fabric-client 108ms (cache hit)
+36 silly placeDep ROOT fabric-client@1.4.19 REPLACE for: fabcar@1.0.0 want: ^1.4.19
+37 timing idealTree:#root Completed in 129ms
+38 timing idealTree:node_modules/fabric-client Completed in 0ms
+39 timing idealTree:buildDeps Completed in 131ms
+40 timing idealTree:fixDepFlags Completed in 3ms
+41 warn EBADENGINE Unsupported engine {
+41 warn EBADENGINE   package: 'fabric-ca-client@1.4.19',
+41 warn EBADENGINE   required: { node: '^10.15.3 || ^12.15.0', npm: '^6.4.1' },
+41 warn EBADENGINE   current: { node: 'v16.14.1', npm: '8.5.0' }
+41 warn EBADENGINE }
+42 warn EBADENGINE Unsupported engine {
+42 warn EBADENGINE   package: 'fabric-client@1.4.19',
+42 warn EBADENGINE   required: { node: '^10.15.3 || ^12.15.0', npm: ' ^6.4.1' },
+42 warn EBADENGINE   current: { node: 'v16.14.1', npm: '8.5.0' }
+42 warn EBADENGINE }
+43 timing idealTree Completed in 322ms
+44 timing reify:loadTrees Completed in 322ms
+45 timing reify:diffTrees Completed in 6ms
+46 silly reify moves {}
+47 timing reify:retireShallow Completed in 0ms
+48 timing reify:createSparse Completed in 1ms
+49 timing reify:loadBundles Completed in 0ms
+50 silly audit bulk request {
+50 silly audit   '@mapbox/node-pre-gyp': [ '1.0.9' ],
+50 silly audit   '@types/bytebuffer': [ '5.0.43' ],
+50 silly audit   '@types/long': [ '4.0.1' ],
+50 silly audit   '@types/node': [ '17.0.23' ],
+50 silly audit   abbrev: [ '1.1.1' ],
+50 silly audit   accepts: [ '1.3.8' ],
+50 silly audit   'agent-base': [ '6.0.2' ],
+50 silly audit   ajv: [ '6.12.6' ],
+50 silly audit   'ansi-regex': [ '5.0.1', '2.1.1' ],
+50 silly audit   aproba: [ '2.0.0' ],
+50 silly audit   'are-we-there-yet': [ '2.0.0' ],
+50 silly audit   argparse: [ '1.0.10' ],
+50 silly audit   'array-flatten': [ '1.1.1' ],
+50 silly audit   ascli: [ '1.0.1' ],
+50 silly audit   asn1: [ '0.2.6' ],
+50 silly audit   'assert-plus': [ '1.0.0' ],
+50 silly audit   async: [ '1.5.2', '1.0.0' ],
+50 silly audit   asynckit: [ '0.4.0' ],
+50 silly audit   'aws-sign2': [ '0.7.0' ],
+50 silly audit   aws4: [ '1.11.0' ],
+50 silly audit   'balanced-match': [ '1.0.2' ],
+50 silly audit   'base64-js': [ '1.5.1' ],
+50 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+50 silly audit   bl: [ '4.1.0' ],
+50 silly audit   'bn.js': [ '4.12.0' ],
+50 silly audit   'body-parser': [ '1.19.2' ],
+50 silly audit   debug: [ '2.6.9', '3.2.7', '4.3.4' ],
+50 silly audit   ms: [ '2.0.0', '2.1.2', '2.1.3' ],
+50 silly audit   qs: [ '6.9.7', '6.5.3' ],
+50 silly audit   'brace-expansion': [ '1.1.11' ],
+50 silly audit   brorand: [ '1.1.0' ],
+50 silly audit   'browser-request': [ '0.3.3' ],
+50 silly audit   buffer: [ '5.7.1' ],
+50 silly audit   bytebuffer: [ '5.0.1' ],
+50 silly audit   long: [ '3.2.0', '4.0.0' ],
+50 silly audit   bytes: [ '3.1.2' ],
+50 silly audit   callsite: [ '1.0.0' ],
+50 silly audit   camelcase: [ '2.1.1' ],
+50 silly audit   caseless: [ '0.12.0' ],
+50 silly audit   chownr: [ '2.0.0' ],
+50 silly audit   cliui: [ '3.2.0' ],
+50 silly audit   'is-fullwidth-code-point': [ '1.0.0', '3.0.0' ],
+50 silly audit   'string-width': [ '1.0.2', '4.2.3' ],
+50 silly audit   'strip-ansi': [ '3.0.1', '6.0.1' ],
+50 silly audit   'cloudant-follow': [ '0.17.0' ],
+50 silly audit   'code-point-at': [ '1.1.0' ],
+50 silly audit   'color-support': [ '1.1.3' ],
+50 silly audit   colors: [ '1.0.3' ],
+50 silly audit   colour: [ '0.7.1' ],
+50 silly audit   'combined-stream': [ '1.0.8' ],
+50 silly audit   'concat-map': [ '0.0.1' ],
+50 silly audit   'console-control-strings': [ '1.1.0' ],
+50 silly audit   'content-disposition': [ '0.5.4' ],
+50 silly audit   'content-type': [ '1.0.4' ],
+50 silly audit   cookie: [ '0.4.2' ],
+50 silly audit   'cookie-signature': [ '1.0.6' ],
+50 silly audit   'core-util-is': [ '1.0.2' ],
+50 silly audit   cycle: [ '1.0.3' ],
+50 silly audit   dashdash: [ '1.14.1' ],
+50 silly audit   decamelize: [ '1.2.0' ],
+50 silly audit   'delayed-stream': [ '1.0.0' ],
+50 silly audit   delegates: [ '1.0.0' ],
+50 silly audit   depd: [ '1.1.2' ],
+50 silly audit   destroy: [ '1.0.4' ],
+50 silly audit   'detect-libc': [ '2.0.1' ],
+50 silly audit   'ecc-jsbn': [ '0.1.2' ],
+50 silly audit   'ee-first': [ '1.1.1' ],
+50 silly audit   elliptic: [ '6.5.4' ],
+50 silly audit   'emoji-regex': [ '8.0.0' ],
+50 silly audit   encodeurl: [ '1.0.2' ],
+50 silly audit   'end-of-stream': [ '1.4.4' ],
+50 silly audit   errs: [ '0.3.2' ],
+50 silly audit   'escape-html': [ '1.0.3' ],
+50 silly audit   esprima: [ '4.0.1' ],
+50 silly audit   etag: [ '1.8.1' ],
+50 silly audit   express: [ '4.17.3' ],
+50 silly audit   extend: [ '3.0.2' ],
+50 silly audit   extsprintf: [ '1.3.0' ],
+50 silly audit   eyes: [ '0.1.8' ],
+50 silly audit   'fabric-ca-client': [ '1.4.19' ],
+50 silly audit   'fast-deep-equal': [ '3.1.3' ],
+50 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+50 silly audit   finalhandler: [ '1.1.2' ],
+50 silly audit   'forever-agent': [ '0.6.1' ],
+50 silly audit   'form-data': [ '2.3.3' ],
+50 silly audit   forwarded: [ '0.2.0' ],
+50 silly audit   fresh: [ '0.5.2' ],
+50 silly audit   'fs-constants': [ '1.0.0' ],
+50 silly audit   'fs-extra': [ '8.1.0' ],
+50 silly audit   'fs-minipass': [ '2.1.0' ],
+50 silly audit   'fs.realpath': [ '1.0.0' ],
+50 silly audit   gauge: [ '3.0.2' ],
+50 silly audit   getpass: [ '0.1.7' ],
+50 silly audit   glob: [ '7.2.0' ],
+50 silly audit   'graceful-fs': [ '4.2.9' ],
+50 silly audit   grpc: [ '1.24.11' ],
+50 silly audit   'har-schema': [ '2.0.0' ],
+50 silly audit   'har-validator': [ '5.1.5' ],
+50 silly audit   'has-unicode': [ '2.0.1' ],
+50 silly audit   'hash.js': [ '1.1.7' ],
+50 silly audit   'hmac-drbg': [ '1.0.1' ],
+50 silly audit   'http-errors': [ '1.8.1' ],
+50 silly audit   'http-signature': [ '1.2.0' ],
+50 silly audit   'https-proxy-agent': [ '5.0.0' ],
+50 silly audit   'iconv-lite': [ '0.4.24' ],
+50 silly audit   ieee754: [ '1.2.1' ],
+50 silly audit   'ignore-walk': [ '3.0.4' ],
+50 silly audit   inflight: [ '1.0.6' ],
+50 silly audit   inherits: [ '2.0.4' ],
+50 silly audit   ini: [ '1.3.8' ],
+50 silly audit   'invert-kv': [ '1.0.0' ],
+50 silly audit   'ipaddr.js': [ '1.9.1' ],
+50 silly audit   'is-typedarray': [ '1.0.0' ],
+50 silly audit   isstream: [ '0.1.2' ],
+50 silly audit   'js-sha3': [ '0.7.0' ],
+50 silly audit   'js-yaml': [ '3.14.1' ],
+50 silly audit   jsbn: [ '0.1.1' ],
+50 silly audit   'json-schema': [ '0.4.0' ],
+50 silly audit   'json-schema-traverse': [ '0.4.1' ],
+50 silly audit   'json-stringify-safe': [ '5.0.1' ],
+50 silly audit   jsonfile: [ '4.0.0' ],
+50 silly audit   jsprim: [ '1.4.2' ],
+50 silly audit   jsrsasign: [ '10.5.14' ],
+50 silly audit   klaw: [ '4.0.1' ],
+50 silly audit   lcid: [ '1.0.0' ],
+50 silly audit   'lodash.camelcase': [ '4.3.0' ],
+50 silly audit   'lodash.clone': [ '4.5.0' ],
+50 silly audit   'lodash.isempty': [ '4.4.0' ],
+50 silly audit   'lru-cache': [ '6.0.0' ],
+50 silly audit   'make-dir': [ '3.1.0' ],
+50 silly audit   semver: [ '6.3.0', '7.3.5' ],
+50 silly audit   'media-typer': [ '0.3.0' ],
+50 silly audit   'merge-descriptors': [ '1.0.1' ],
+50 silly audit   methods: [ '1.1.2' ],
+50 silly audit   mime: [ '1.6.0' ],
+50 silly audit   'mime-db': [ '1.52.0' ],
+50 silly audit   'mime-types': [ '2.1.35' ],
+50 silly audit   'minimalistic-assert': [ '1.0.1' ],
+50 silly audit   'minimalistic-crypto-utils': [ '1.0.1' ],
+50 silly audit   minimatch: [ '3.1.2' ],
+50 silly audit   minipass: [ '3.1.6' ],
+50 silly audit   minizlib: [ '2.1.2' ],
+50 silly audit   mkdirp: [ '1.0.4' ],
+50 silly audit   nan: [ '2.15.0' ],
+50 silly audit   nano: [ '6.4.4' ],
+50 silly audit   nconf: [ '0.10.0' ],
+50 silly audit   negotiator: [ '0.6.3' ],
+50 silly audit   'node-fetch': [ '2.6.7' ],
+50 silly audit   nopt: [ '5.0.0' ],
+50 silly audit   npmlog: [ '5.0.1' ],
+50 silly audit   'number-is-nan': [ '1.0.1' ],
+50 silly audit   'oauth-sign': [ '0.9.0' ],
+50 silly audit   'object-assign': [ '4.1.1' ],
+50 silly audit   'on-finished': [ '2.3.0' ],
+50 silly audit   once: [ '1.4.0' ],
+50 silly audit   optjs: [ '3.2.2' ],
+50 silly audit   'os-locale': [ '1.4.0' ],
+50 silly audit   parseurl: [ '1.3.3' ],
+50 silly audit   'path-is-absolute': [ '1.0.1' ],
+50 silly audit   'path-to-regexp': [ '0.1.7' ],
+50 silly audit   'performance-now': [ '2.1.0' ],
+50 silly audit   pkcs11js: [ '1.3.0' ],
+50 silly audit   'promise-settle': [ '0.3.0' ],
+50 silly audit   protobufjs: [ '5.0.3' ],
+50 silly audit   'proxy-addr': [ '2.0.7' ],
+50 silly audit   psl: [ '1.8.0' ],
+50 silly audit   punycode: [ '2.1.1', '1.3.2' ],
+50 silly audit   querystring: [ '0.2.0' ],
+50 silly audit   'range-parser': [ '1.2.1' ],
+50 silly audit   'raw-body': [ '2.4.3' ],
+50 silly audit   'readable-stream': [ '3.6.0' ],
+50 silly audit   request: [ '2.88.2' ],
+50 silly audit   rimraf: [ '3.0.2' ],
+50 silly audit   'safe-buffer': [ '5.2.1' ],
+50 silly audit   'safer-buffer': [ '2.1.2' ],
+50 silly audit   'secure-keys': [ '1.0.0' ],
+50 silly audit   send: [ '0.17.2' ],
+50 silly audit   'serve-static': [ '1.14.2' ],
+50 silly audit   'set-blocking': [ '2.0.0' ],
+50 silly audit   setprototypeof: [ '1.2.0' ],
+50 silly audit   'signal-exit': [ '3.0.7' ],
+50 silly audit   sjcl: [ '1.0.7' ],
+50 silly audit   'sprintf-js': [ '1.0.3' ],
+50 silly audit   sshpk: [ '1.17.0' ],
+50 silly audit   'stack-trace': [ '0.0.10' ],
+50 silly audit   statuses: [ '1.5.0' ],
+50 silly audit   string_decoder: [ '1.3.0' ],
+50 silly audit   tar: [ '6.1.11' ],
+50 silly audit   'tar-stream': [ '2.2.0' ],
+50 silly audit   toidentifier: [ '1.0.1' ],
+50 silly audit   'tough-cookie': [ '2.5.0' ],
+50 silly audit   tr46: [ '0.0.3' ],
+50 silly audit   'tunnel-agent': [ '0.6.0' ],
+50 silly audit   tweetnacl: [ '0.14.5' ],
+50 silly audit   'type-is': [ '1.6.18' ],
+50 silly audit   universalify: [ '0.1.2' ],
+50 silly audit   unpipe: [ '1.0.0' ],
+50 silly audit   'uri-js': [ '4.4.1' ],
+50 silly audit   url: [ '0.11.0' ],
+50 silly audit   'util-deprecate': [ '1.0.2' ],
+50 silly audit   'utils-merge': [ '1.0.1' ],
+50 silly audit   uuid: [ '3.4.0' ],
+50 silly audit   vary: [ '1.1.2' ],
+50 silly audit   verror: [ '1.10.0' ],
+50 silly audit   'webidl-conversions': [ '3.0.1' ],
+50 silly audit   'whatwg-url': [ '5.0.0' ],
+50 silly audit   'wide-align': [ '1.1.5' ],
+50 silly audit   'window-size': [ '0.1.4' ],
+50 silly audit   winston: [ '2.4.5' ],
+50 silly audit   'wrap-ansi': [ '2.1.0' ],
+50 silly audit   wrappy: [ '1.0.2' ],
+50 silly audit   y18n: [ '3.2.2' ],
+50 silly audit   yallist: [ '4.0.0' ],
+50 silly audit   yargs: [ '3.32.0' ],
+50 silly audit   'fabric-client': [ '1.4.19' ]
+50 silly audit }
+51 timing reifyNode:node_modules/pkcs11js Completed in 65ms
+52 timing reify:unpack Completed in 65ms
+53 timing reify:unretire Completed in 0ms
+54 timing build:queue Completed in 1ms
+55 info run pkcs11js@1.3.0 install node_modules/pkcs11js node-gyp rebuild
+56 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 200ms
+57 timing auditReport:getReport Completed in 204ms
+58 silly audit report {
+58 silly audit report   async: [
+58 silly audit report     {
+58 silly audit report       id: 1070206,
+58 silly audit report       url: 'https://github.com/advisories/GHSA-fwr7-v2mv-hh25',
+58 silly audit report       title: 'Prototype Pollution in async',
+58 silly audit report       severity: 'high',
+58 silly audit report       vulnerable_versions: '<2.6.4',
+58 silly audit report       cwe: [Array],
+58 silly audit report       cvss: [Object]
+58 silly audit report     }
+58 silly audit report   ],
+58 silly audit report   nconf: [
+58 silly audit report     {
+58 silly audit report       id: 1070223,
+58 silly audit report       url: 'https://github.com/advisories/GHSA-6xwr-q98w-rvg7',
+58 silly audit report       title: 'Prototype Pollution in nconf',
+58 silly audit report       severity: 'high',
+58 silly audit report       vulnerable_versions: '<0.11.4',
+58 silly audit report       cwe: [Array],
+58 silly audit report       cvss: [Object]
+58 silly audit report     }
+58 silly audit report   ]
+58 silly audit report }
+59 timing metavuln:cache:get:security-advisory:async:WFyfJ5CCGrpHtYucwAKG7Z02f+7xI7qr61DrlwFMnEuIwq14thmHbrwSl/GTfb9wQaTPP80IV7l2F/0iHfBdmg== Completed in 8ms
+60 timing metavuln:cache:get:security-advisory:nconf:/t62kYCyWl+VKCTafMdtcARwlBscjmb43UeazMwWq9XbelP0AYkALnEMJ/QIxvQ0ylTN4ceXaN0NVJpVMQ14YA== Completed in 7ms
+61 http fetch GET 200 https://registry.npmjs.org/async 13ms (cache hit)
+62 timing metavuln:packument:async Completed in 15ms
+63 timing metavuln:load:security-advisory:async:1070206 Completed in 3ms
+64 timing metavuln:calculate:security-advisory:async:1070206 Completed in 19ms
+65 http fetch GET 200 https://registry.npmjs.org/nconf 17ms (cache hit)
+66 timing metavuln:packument:nconf Completed in 18ms
+67 timing metavuln:load:security-advisory:nconf:1070223 Completed in 0ms
+68 timing metavuln:calculate:security-advisory:nconf:1070223 Completed in 19ms
+69 timing metavuln:cache:get:security-advisory:nconf:H+DofylAnF0N5ZWSvrXQaHRky64HfuftVTeOIUKiPzg8Qqh0kekiLFw73WCqyjpPoLyCypJaxzgw5P5x81rJWQ== Completed in 4ms
+70 timing metavuln:load:security-advisory:nconf:WFyfJ5CCGrpHtYucwAKG7Z02f+7xI7qr61DrlwFMnEuIwq14thmHbrwSl/GTfb9wQaTPP80IV7l2F/0iHfBdmg== Completed in 1ms
+71 timing metavuln:calculate:security-advisory:nconf:WFyfJ5CCGrpHtYucwAKG7Z02f+7xI7qr61DrlwFMnEuIwq14thmHbrwSl/GTfb9wQaTPP80IV7l2F/0iHfBdmg== Completed in 5ms
+72 timing metavuln:cache:get:security-advisory:winston:sXFvvRBEiVfK6J/QMpwS2BghqAsRcr/RgS4ovmYuBnuhfu01FwYmWPp5cMq91A9poxwx7Q3Ep/gVy3X6Esrxxg== Completed in 5ms
+73 http fetch GET 200 https://registry.npmjs.org/winston 7ms (cache hit)
+74 timing metavuln:packument:winston Completed in 9ms
+75 timing metavuln:load:security-advisory:winston:WFyfJ5CCGrpHtYucwAKG7Z02f+7xI7qr61DrlwFMnEuIwq14thmHbrwSl/GTfb9wQaTPP80IV7l2F/0iHfBdmg== Completed in 1ms
+76 timing metavuln:calculate:security-advisory:winston:WFyfJ5CCGrpHtYucwAKG7Z02f+7xI7qr61DrlwFMnEuIwq14thmHbrwSl/GTfb9wQaTPP80IV7l2F/0iHfBdmg== Completed in 11ms
+77 timing metavuln:packument:fabric-client Completed in 1ms
+78 timing metavuln:cache:get:security-advisory:fabric-client:63UcHseC5GPi3+tjjAhetMG7sno1So+AEwqUAzi7cRUy+OPYePXLe3/YME+sj/0pekWiy5zSHGJD3AlusUeFXQ== Completed in 2ms
+79 timing metavuln:load:security-advisory:fabric-client:/t62kYCyWl+VKCTafMdtcARwlBscjmb43UeazMwWq9XbelP0AYkALnEMJ/QIxvQ0ylTN4ceXaN0NVJpVMQ14YA== Completed in 34ms
+80 timing metavuln:calculate:security-advisory:fabric-client:/t62kYCyWl+VKCTafMdtcARwlBscjmb43UeazMwWq9XbelP0AYkALnEMJ/QIxvQ0ylTN4ceXaN0NVJpVMQ14YA== Completed in 36ms
+81 timing metavuln:cache:get:security-advisory:fabric-ca-client:yN4H4eMsnOyB924BrX5kDbnGNUHd+xKmuK3ytq6vWt1+u/nNWGDDTepVJh6pk0MqTpflkzjCUA2vagH4lEeiow== Completed in 5ms
+82 timing metavuln:cache:get:security-advisory:fabric-client:7Vw4MJwsvWXSnbyC9UOjL6M/itwbeQNDAVQGT7mmmQSbv2V7Sfruz+M2wo1NheyNlBGnfV6mZ9L5nssF+mS/iQ== Completed in 5ms
+83 timing metavuln:load:security-advisory:fabric-client:sXFvvRBEiVfK6J/QMpwS2BghqAsRcr/RgS4ovmYuBnuhfu01FwYmWPp5cMq91A9poxwx7Q3Ep/gVy3X6Esrxxg== Completed in 17ms
+84 timing metavuln:calculate:security-advisory:fabric-client:sXFvvRBEiVfK6J/QMpwS2BghqAsRcr/RgS4ovmYuBnuhfu01FwYmWPp5cMq91A9poxwx7Q3Ep/gVy3X6Esrxxg== Completed in 22ms
+85 http fetch GET 200 https://registry.npmjs.org/fabric-ca-client 44ms (cache hit)
+86 timing metavuln:packument:fabric-ca-client Completed in 59ms
+87 timing metavuln:load:security-advisory:fabric-ca-client:sXFvvRBEiVfK6J/QMpwS2BghqAsRcr/RgS4ovmYuBnuhfu01FwYmWPp5cMq91A9poxwx7Q3Ep/gVy3X6Esrxxg== Completed in 29ms
+88 timing metavuln:calculate:security-advisory:fabric-ca-client:sXFvvRBEiVfK6J/QMpwS2BghqAsRcr/RgS4ovmYuBnuhfu01FwYmWPp5cMq91A9poxwx7Q3Ep/gVy3X6Esrxxg== Completed in 89ms
+89 timing auditReport:init Completed in 305ms
+90 timing reify:audit Completed in 510ms
+91 info run pkcs11js@1.3.0 install { code: 1, signal: null }
+92 verbose reify failed optional dependency /root/fabric-samples/fabcar/node_modules/pkcs11js
+93 silly reify mark deleted [ '/root/fabric-samples/fabcar/node_modules/pkcs11js' ]
+94 timing build:run:install:node_modules/pkcs11js Completed in 806ms
+95 timing build:run:install Completed in 808ms
+96 timing build:deps Completed in 809ms
+97 timing build Completed in 809ms
+98 timing reify:build Completed in 810ms
+99 timing reify:trash Completed in 11ms
+100 timing reify:save Completed in 46ms
+101 timing reify Completed in 1305ms
+102 silly ADD
+103 timing command:i Completed in 1348ms
+104 verbose exit 0
+105 timing npm Completed in 1596ms
+106 info ok

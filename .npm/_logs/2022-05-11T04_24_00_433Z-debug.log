@@ -1,0 +1,331 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/root/.nvm/versions/node/v10.15.3/bin/node',
+1 verbose cli   '/root/.nvm/versions/node/v10.15.3/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   'fabcar' ]
+2 info using npm@6.4.1
+3 info using node@v10.15.3
+4 verbose npm-session f4876d28783655b6
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/fabcar 224ms
+8 http fetch GET 200 https://registry.npmjs.org/fabcar/-/fabcar-1.0.0.tgz 133ms
+9 silly pacote tag manifest for fabcar@latest fetched in 366ms
+10 timing stage:loadCurrentTree Completed in 918ms
+11 silly install loadIdealTree
+12 silly install cloneCurrentTreeToIdealTree
+13 timing stage:loadIdealTree:cloneCurrentTree Completed in 2ms
+14 silly install loadShrinkwrap
+15 timing stage:loadIdealTree:loadShrinkwrap Completed in 173ms
+16 silly install loadAllDepsIntoIdealTree
+17 timing stage:rollbackFailedOptional Completed in 1ms
+18 timing stage:runTopLevelLifecycles Completed in 1096ms
+19 silly saveTree fabcar@1.0.0
+19 silly saveTree ├─┬ express@4.17.3
+19 silly saveTree │ ├─┬ accepts@1.3.8
+19 silly saveTree │ │ ├─┬ mime-types@2.1.35
+19 silly saveTree │ │ │ └── mime-db@1.52.0
+19 silly saveTree │ │ └── negotiator@0.6.3
+19 silly saveTree │ ├── array-flatten@1.1.1
+19 silly saveTree │ ├─┬ body-parser@1.19.2
+19 silly saveTree │ │ ├── bytes@3.1.2
+19 silly saveTree │ │ ├── content-type@1.0.4
+19 silly saveTree │ │ ├─┬ debug@2.6.9
+19 silly saveTree │ │ │ └── ms@2.0.0
+19 silly saveTree │ │ ├── depd@1.1.2
+19 silly saveTree │ │ ├─┬ http-errors@1.8.1
+19 silly saveTree │ │ │ ├── inherits@2.0.4
+19 silly saveTree │ │ │ ├── setprototypeof@1.2.0
+19 silly saveTree │ │ │ ├── statuses@1.5.0
+19 silly saveTree │ │ │ └── toidentifier@1.0.1
+19 silly saveTree │ │ ├─┬ iconv-lite@0.4.24
+19 silly saveTree │ │ │ └── safer-buffer@2.1.2
+19 silly saveTree │ │ ├─┬ on-finished@2.3.0
+19 silly saveTree │ │ │ └── ee-first@1.1.1
+19 silly saveTree │ │ ├── qs@6.9.7
+19 silly saveTree │ │ ├─┬ raw-body@2.4.3
+19 silly saveTree │ │ │ └── unpipe@1.0.0
+19 silly saveTree │ │ └─┬ type-is@1.6.18
+19 silly saveTree │ │   └── media-typer@0.3.0
+19 silly saveTree │ ├─┬ content-disposition@0.5.4
+19 silly saveTree │ │ └── safe-buffer@5.2.1
+19 silly saveTree │ ├── content-type@1.0.4
+19 silly saveTree │ ├── cookie-signature@1.0.6
+19 silly saveTree │ ├── cookie@0.4.2
+19 silly saveTree │ ├─┬ debug@2.6.9
+19 silly saveTree │ │ └── ms@2.0.0
+19 silly saveTree │ ├── depd@1.1.2
+19 silly saveTree │ ├── encodeurl@1.0.2
+19 silly saveTree │ ├── escape-html@1.0.3
+19 silly saveTree │ ├── etag@1.8.1
+19 silly saveTree │ ├─┬ finalhandler@1.1.2
+19 silly saveTree │ │ ├─┬ debug@2.6.9
+19 silly saveTree │ │ │ └── ms@2.0.0
+19 silly saveTree │ │ └── parseurl@1.3.3
+19 silly saveTree │ ├── fresh@0.5.2
+19 silly saveTree │ ├── merge-descriptors@1.0.1
+19 silly saveTree │ ├── methods@1.1.2
+19 silly saveTree │ ├── on-finished@2.3.0
+19 silly saveTree │ ├── parseurl@1.3.3
+19 silly saveTree │ ├── path-to-regexp@0.1.7
+19 silly saveTree │ ├─┬ proxy-addr@2.0.7
+19 silly saveTree │ │ ├── forwarded@0.2.0
+19 silly saveTree │ │ └── ipaddr.js@1.9.1
+19 silly saveTree │ ├── qs@6.9.7
+19 silly saveTree │ ├── range-parser@1.2.1
+19 silly saveTree │ ├── safe-buffer@5.2.1
+19 silly saveTree │ ├─┬ send@0.17.2
+19 silly saveTree │ │ ├─┬ debug@2.6.9
+19 silly saveTree │ │ │ └── ms@2.0.0
+19 silly saveTree │ │ ├── destroy@1.0.4
+19 silly saveTree │ │ ├── mime@1.6.0
+19 silly saveTree │ │ └── ms@2.1.3
+19 silly saveTree │ ├── serve-static@1.14.2
+19 silly saveTree │ ├── setprototypeof@1.2.0
+19 silly saveTree │ ├── statuses@1.5.0
+19 silly saveTree │ ├── type-is@1.6.18
+19 silly saveTree │ ├── utils-merge@1.0.1
+19 silly saveTree │ └── vary@1.1.2
+19 silly saveTree ├─┬ fabric-ca-client@1.4.19
+19 silly saveTree │ ├─┬ grpc@1.24.11
+19 silly saveTree │ │ ├─┬ @mapbox/node-pre-gyp@1.0.9
+19 silly saveTree │ │ │ ├── detect-libc@2.0.1
+19 silly saveTree │ │ │ ├─┬ https-proxy-agent@5.0.0
+19 silly saveTree │ │ │ │ ├─┬ agent-base@6.0.2
+19 silly saveTree │ │ │ │ │ └─┬ debug@4.3.4
+19 silly saveTree │ │ │ │ │   └── ms@2.1.2
+19 silly saveTree │ │ │ │ └── debug@4.3.4
+19 silly saveTree │ │ │ ├─┬ make-dir@3.1.0
+19 silly saveTree │ │ │ │ └── semver@6.3.0
+19 silly saveTree │ │ │ ├─┬ node-fetch@2.6.7
+19 silly saveTree │ │ │ │ └─┬ whatwg-url@5.0.0
+19 silly saveTree │ │ │ │   ├── tr46@0.0.3
+19 silly saveTree │ │ │ │   └── webidl-conversions@3.0.1
+19 silly saveTree │ │ │ ├─┬ nopt@5.0.0
+19 silly saveTree │ │ │ │ └── abbrev@1.1.1
+19 silly saveTree │ │ │ ├─┬ npmlog@5.0.1
+19 silly saveTree │ │ │ │ ├─┬ are-we-there-yet@2.0.0
+19 silly saveTree │ │ │ │ │ ├── delegates@1.0.0
+19 silly saveTree │ │ │ │ │ └─┬ readable-stream@3.6.0
+19 silly saveTree │ │ │ │ │   ├── string_decoder@1.3.0
+19 silly saveTree │ │ │ │ │   └── util-deprecate@1.0.2
+19 silly saveTree │ │ │ │ ├── console-control-strings@1.1.0
+19 silly saveTree │ │ │ │ ├─┬ gauge@3.0.2
+19 silly saveTree │ │ │ │ │ ├── aproba@2.0.0
+19 silly saveTree │ │ │ │ │ ├── color-support@1.1.3
+19 silly saveTree │ │ │ │ │ ├── has-unicode@2.0.1
+19 silly saveTree │ │ │ │ │ ├── object-assign@4.1.1
+19 silly saveTree │ │ │ │ │ ├── signal-exit@3.0.7
+19 silly saveTree │ │ │ │ │ ├─┬ string-width@4.2.3
+19 silly saveTree │ │ │ │ │ │ ├── emoji-regex@8.0.0
+19 silly saveTree │ │ │ │ │ │ ├── is-fullwidth-code-point@3.0.0
+19 silly saveTree │ │ │ │ │ │ └─┬ strip-ansi@6.0.1
+19 silly saveTree │ │ │ │ │ │   └── ansi-regex@5.0.1
+19 silly saveTree │ │ │ │ │ ├── strip-ansi@6.0.1
+19 silly saveTree │ │ │ │ │ └── wide-align@1.1.5
+19 silly saveTree │ │ │ │ └── set-blocking@2.0.0
+19 silly saveTree │ │ │ ├─┬ rimraf@3.0.2
+19 silly saveTree │ │ │ │ └─┬ glob@7.2.0
+19 silly saveTree │ │ │ │   ├── fs.realpath@1.0.0
+19 silly saveTree │ │ │ │   ├─┬ inflight@1.0.6
+19 silly saveTree │ │ │ │   │ ├─┬ once@1.4.0
+19 silly saveTree │ │ │ │   │ │ └── wrappy@1.0.2
+19 silly saveTree │ │ │ │   │ └── wrappy@1.0.2
+19 silly saveTree │ │ │ │   ├─┬ minimatch@3.1.2
+19 silly saveTree │ │ │ │   │ └─┬ brace-expansion@1.1.11
+19 silly saveTree │ │ │ │   │   ├── balanced-match@1.0.2
+19 silly saveTree │ │ │ │   │   └── concat-map@0.0.1
+19 silly saveTree │ │ │ │   ├── once@1.4.0
+19 silly saveTree │ │ │ │   └── path-is-absolute@1.0.1
+19 silly saveTree │ │ │ ├─┬ semver@7.3.5
+19 silly saveTree │ │ │ │ └─┬ lru-cache@6.0.0
+19 silly saveTree │ │ │ │   └── yallist@4.0.0
+19 silly saveTree │ │ │ └─┬ tar@6.1.11
+19 silly saveTree │ │ │   ├── chownr@2.0.0
+19 silly saveTree │ │ │   ├─┬ fs-minipass@2.1.0
+19 silly saveTree │ │ │   │ └── minipass@3.1.6
+19 silly saveTree │ │ │   ├── minipass@3.1.6
+19 silly saveTree │ │ │   ├── minizlib@2.1.2
+19 silly saveTree │ │ │   └── mkdirp@1.0.4
+19 silly saveTree │ │ ├─┬ @types/bytebuffer@5.0.43
+19 silly saveTree │ │ │ ├── @types/long@4.0.1
+19 silly saveTree │ │ │ └── @types/node@17.0.23
+19 silly saveTree │ │ ├── lodash.camelcase@4.3.0
+19 silly saveTree │ │ ├── lodash.clone@4.5.0
+19 silly saveTree │ │ ├── nan@2.15.0
+19 silly saveTree │ │ └─┬ protobufjs@5.0.3
+19 silly saveTree │ │   ├─┬ ascli@1.0.1
+19 silly saveTree │ │   │ ├── colour@0.7.1
+19 silly saveTree │ │   │ └── optjs@3.2.2
+19 silly saveTree │ │   ├─┬ bytebuffer@5.0.1
+19 silly saveTree │ │   │ └── long@3.2.0
+19 silly saveTree │ │   └─┬ yargs@3.32.0
+19 silly saveTree │ │     ├── camelcase@2.1.1
+19 silly saveTree │ │     ├─┬ cliui@3.2.0
+19 silly saveTree │ │     │ ├─┬ string-width@1.0.2
+19 silly saveTree │ │     │ │ ├── code-point-at@1.1.0
+19 silly saveTree │ │     │ │ ├─┬ is-fullwidth-code-point@1.0.0
+19 silly saveTree │ │     │ │ │ └── number-is-nan@1.0.1
+19 silly saveTree │ │     │ │ └─┬ strip-ansi@3.0.1
+19 silly saveTree │ │     │ │   └── ansi-regex@2.1.1
+19 silly saveTree │ │     │ ├── strip-ansi@3.0.1
+19 silly saveTree │ │     │ └─┬ wrap-ansi@2.1.0
+19 silly saveTree │ │     │   ├─┬ string-width@1.0.2
+19 silly saveTree │ │     │   │ ├── is-fullwidth-code-point@1.0.0
+19 silly saveTree │ │     │   │ └─┬ strip-ansi@3.0.1
+19 silly saveTree │ │     │   │   └── ansi-regex@2.1.1
+19 silly saveTree │ │     │   └── strip-ansi@3.0.1
+19 silly saveTree │ │     ├── decamelize@1.2.0
+19 silly saveTree │ │     ├─┬ os-locale@1.4.0
+19 silly saveTree │ │     │ └─┬ lcid@1.0.0
+19 silly saveTree │ │     │   └── invert-kv@1.0.0
+19 silly saveTree │ │     ├─┬ string-width@1.0.2
+19 silly saveTree │ │     │ ├── is-fullwidth-code-point@1.0.0
+19 silly saveTree │ │     │ └─┬ strip-ansi@3.0.1
+19 silly saveTree │ │     │   └── ansi-regex@2.1.1
+19 silly saveTree │ │     ├── window-size@0.1.4
+19 silly saveTree │ │     └── y18n@3.2.2
+19 silly saveTree │ ├── jsrsasign@10.5.14
+19 silly saveTree │ ├── lodash.clone@4.5.0
+19 silly saveTree │ ├─┬ url@0.11.0
+19 silly saveTree │ │ ├── punycode@1.3.2
+19 silly saveTree │ │ └── querystring@0.2.0
+19 silly saveTree │ └─┬ winston@2.4.6
+19 silly saveTree │   ├── async@3.2.3
+19 silly saveTree │   ├── colors@1.0.3
+19 silly saveTree │   ├── cycle@1.0.3
+19 silly saveTree │   ├── eyes@0.1.8
+19 silly saveTree │   ├── isstream@0.1.2
+19 silly saveTree │   └── stack-trace@0.0.10
+19 silly saveTree ├─┬ fabric-client@1.4.19
+19 silly saveTree │ ├── bn.js@4.12.0
+19 silly saveTree │ ├── callsite@1.0.0
+19 silly saveTree │ ├─┬ elliptic@6.5.4
+19 silly saveTree │ │ ├── brorand@1.1.0
+19 silly saveTree │ │ ├─┬ hash.js@1.1.7
+19 silly saveTree │ │ │ └── minimalistic-assert@1.0.1
+19 silly saveTree │ │ ├─┬ hmac-drbg@1.0.1
+19 silly saveTree │ │ │ └── minimalistic-crypto-utils@1.0.1
+19 silly saveTree │ │ ├── minimalistic-assert@1.0.1
+19 silly saveTree │ │ └── minimalistic-crypto-utils@1.0.1
+19 silly saveTree │ ├─┬ fs-extra@8.1.0
+19 silly saveTree │ │ ├── graceful-fs@4.2.9
+19 silly saveTree │ │ ├── jsonfile@4.0.0
+19 silly saveTree │ │ └── universalify@0.1.2
+19 silly saveTree │ ├── ignore-walk@3.0.4
+19 silly saveTree │ ├── js-sha3@0.7.0
+19 silly saveTree │ ├─┬ js-yaml@3.14.1
+19 silly saveTree │ │ ├─┬ argparse@1.0.10
+19 silly saveTree │ │ │ └── sprintf-js@1.0.3
+19 silly saveTree │ │ └── esprima@4.0.1
+19 silly saveTree │ ├── klaw@4.0.1
+19 silly saveTree │ ├── long@4.0.0
+19 silly saveTree │ ├─┬ nano@6.4.4
+19 silly saveTree │ │ ├─┬ cloudant-follow@0.17.0
+19 silly saveTree │ │ │ ├── browser-request@0.3.3
+19 silly saveTree │ │ │ ├── debug@3.2.7
+19 silly saveTree │ │ │ └─┬ request@2.88.2
+19 silly saveTree │ │ │   ├── aws-sign2@0.7.0
+19 silly saveTree │ │ │   ├── aws4@1.11.0
+19 silly saveTree │ │ │   ├── caseless@0.12.0
+19 silly saveTree │ │ │   ├─┬ combined-stream@1.0.8
+19 silly saveTree │ │ │   │ └── delayed-stream@1.0.0
+19 silly saveTree │ │ │   ├── extend@3.0.2
+19 silly saveTree │ │ │   ├── forever-agent@0.6.1
+19 silly saveTree │ │ │   ├─┬ form-data@2.3.3
+19 silly saveTree │ │ │   │ └── asynckit@0.4.0
+19 silly saveTree │ │ │   ├─┬ har-validator@5.1.5
+19 silly saveTree │ │ │   │ ├─┬ ajv@6.12.6
+19 silly saveTree │ │ │   │ │ ├── fast-deep-equal@3.1.3
+19 silly saveTree │ │ │   │ │ ├── fast-json-stable-stringify@2.1.0
+19 silly saveTree │ │ │   │ │ ├── json-schema-traverse@0.4.1
+19 silly saveTree │ │ │   │ │ └─┬ uri-js@4.4.1
+19 silly saveTree │ │ │   │ │   └── punycode@2.1.1
+19 silly saveTree │ │ │   │ └── har-schema@2.0.0
+19 silly saveTree │ │ │   ├─┬ http-signature@1.2.0
+19 silly saveTree │ │ │   │ ├── assert-plus@1.0.0
+19 silly saveTree │ │ │   │ ├─┬ jsprim@1.4.2
+19 silly saveTree │ │ │   │ │ ├── extsprintf@1.3.0
+19 silly saveTree │ │ │   │ │ ├── json-schema@0.4.0
+19 silly saveTree │ │ │   │ │ └─┬ verror@1.10.0
+19 silly saveTree │ │ │   │ │   └── core-util-is@1.0.2
+19 silly saveTree │ │ │   │ └─┬ sshpk@1.17.0
+19 silly saveTree │ │ │   │   ├── asn1@0.2.6
+19 silly saveTree │ │ │   │   ├─┬ bcrypt-pbkdf@1.0.2
+19 silly saveTree │ │ │   │   │ └── tweetnacl@0.14.5
+19 silly saveTree │ │ │   │   ├── dashdash@1.14.1
+19 silly saveTree │ │ │   │   ├─┬ ecc-jsbn@0.1.2
+19 silly saveTree │ │ │   │   │ └── jsbn@0.1.1
+19 silly saveTree │ │ │   │   ├── getpass@0.1.7
+19 silly saveTree │ │ │   │   ├── jsbn@0.1.1
+19 silly saveTree │ │ │   │   └── tweetnacl@0.14.5
+19 silly saveTree │ │ │   ├── is-typedarray@1.0.0
+19 silly saveTree │ │ │   ├── json-stringify-safe@5.0.1
+19 silly saveTree │ │ │   ├── oauth-sign@0.9.0
+19 silly saveTree │ │ │   ├── performance-now@2.1.0
+19 silly saveTree │ │ │   ├── qs@6.5.3
+19 silly saveTree │ │ │   ├─┬ tough-cookie@2.5.0
+19 silly saveTree │ │ │   │ └── psl@1.8.0
+19 silly saveTree │ │ │   ├── tunnel-agent@0.6.0
+19 silly saveTree │ │ │   └── uuid@3.4.0
+19 silly saveTree │ │ ├─┬ debug@2.6.9
+19 silly saveTree │ │ │ └── ms@2.0.0
+19 silly saveTree │ │ ├── errs@0.3.2
+19 silly saveTree │ │ ├── lodash.isempty@4.4.0
+19 silly saveTree │ │ └── request@2.88.2
+19 silly saveTree │ ├─┬ nconf@0.10.0
+19 silly saveTree │ │ ├── async@1.5.2
+19 silly saveTree │ │ ├── ini@1.3.8
+19 silly saveTree │ │ └── secure-keys@1.0.0
+19 silly saveTree │ ├── pkcs11js@1.3.0
+19 silly saveTree │ ├── promise-settle@0.3.0
+19 silly saveTree │ ├── sjcl@1.0.7
+19 silly saveTree │ └─┬ tar-stream@2.2.0
+19 silly saveTree │   ├─┬ bl@4.1.0
+19 silly saveTree │   │ └─┬ buffer@5.7.1
+19 silly saveTree │   │   ├── base64-js@1.5.1
+19 silly saveTree │   │   └── ieee754@1.2.1
+19 silly saveTree │   ├── end-of-stream@1.4.4
+19 silly saveTree │   └── fs-constants@1.0.0
+19 silly saveTree ├── grpc@1.24.11
+19 silly saveTree └─┬ node-fetch@3.2.4
+19 silly saveTree   ├── data-uri-to-buffer@4.0.0
+19 silly saveTree   ├─┬ fetch-blob@3.1.5
+19 silly saveTree   │ ├── node-domexception@1.0.0
+19 silly saveTree   │ └── web-streams-polyfill@3.2.1
+19 silly saveTree   └── formdata-polyfill@4.0.10
+20 verbose stack Error: Refusing to install package with name "fabcar" under a package
+20 verbose stack also called "fabcar". Did you name your project the same
+20 verbose stack as the dependency you're installing?
+20 verbose stack
+20 verbose stack For more information, see:
+20 verbose stack     <https://docs.npmjs.com/cli/install#limitations-of-npms-install-algorithm>
+20 verbose stack     at checkSelf (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/lib/install/validate-args.js:64:14)
+20 verbose stack     at Array.<anonymous> (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+20 verbose stack     at LOOP (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+20 verbose stack     at /root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+20 verbose stack     at hasMinimumFields (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/lib/install/validate-args.js:30:12)
+20 verbose stack     at Array.<anonymous> (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+20 verbose stack     at LOOP (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+20 verbose stack     at chain (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+20 verbose stack     at /root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/lib/install/validate-args.js:16:5
+20 verbose stack     at /root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+20 verbose stack     at Array.forEach (<anonymous>)
+20 verbose stack     at /root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+20 verbose stack     at Array.forEach (<anonymous>)
+20 verbose stack     at asyncMap (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+20 verbose stack     at module.exports (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/lib/install/validate-args.js:15:3)
+20 verbose stack     at Array.<anonymous> (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+21 verbose cwd /root/fabric-samples/fabcar
+22 verbose Linux 3.10.0-1160.59.1.el7.x86_64
+23 verbose argv "/root/.nvm/versions/node/v10.15.3/bin/node" "/root/.nvm/versions/node/v10.15.3/bin/npm" "i" "fabcar"
+24 verbose node v10.15.3
+25 verbose npm  v6.4.1
+26 error code ENOSELF
+27 error Refusing to install package with name "fabcar" under a package
+27 error also called "fabcar". Did you name your project the same
+27 error as the dependency you're installing?
+27 error
+27 error For more information, see:
+27 error     <https://docs.npmjs.com/cli/install#limitations-of-npms-install-algorithm>
+28 verbose exit [ 1, true ]
